@@ -6,7 +6,10 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: -80px;
+  margin-bottom: -33px;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: -80px;
+  }
   &__item {
     width: calc(50% - 20px);
     margin-bottom: 33px;

@@ -20,6 +20,7 @@
     opacity: 0;
     transform: translateX(100%);
     transition: transform var(--transition-time), opacity var(--transition-time);
+    overflow: auto;
     @include media-breakpoint-up(xl) {
       display: none !important;
     }

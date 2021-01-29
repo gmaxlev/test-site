@@ -3,9 +3,19 @@
  */
 
 .coaches {
-  padding: 20px;
-  margin: -20px;
+  margin: 0;
+  padding: 0;
   position: relative;
+  padding-right: 50px;
+  @include media-breakpoint-up(sm) {
+    padding: 20px;
+    margin: -20px;
+  }
+  .swiper-container {
+    @include media-breakpoint-down(sm) {
+      overflow: visible;
+    }
+  }
   .swiper-wrapper {
     display: flex;
     justify-content: space-between;
@@ -118,8 +128,10 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    display: -webkit-box;
     display: flex;
     align-items: center;
+    top: calc(100% + 15px);
     @include media-breakpoint-up(sm) {
        display: none;
     }
