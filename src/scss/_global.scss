@@ -1,0 +1,13 @@
+/* 
+    Глобальные стили
+*/
+html {
+  font-family: var(--font-1);
+}
+a {
+  text-decoration: none;
+}
+.wow {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}

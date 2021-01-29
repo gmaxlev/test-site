@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../fonts/Montserrat-SemiBoldItalic.eot"); /* IE9 */
+    src: url("../fonts/Montserrat-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/Montserrat-SemiBoldItalic.svg#Montserrat SemiBold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

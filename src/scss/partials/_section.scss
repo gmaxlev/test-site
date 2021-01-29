@@ -1,0 +1,34 @@
+/**
+  Секция
+ */
+
+.section {
+ margin: 56px 0;
+  @include media-breakpoint-up(md) {
+    margin: 100px 0;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 93.9%;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 24px;
+    }
+  }
+  &__comment {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 153.4%;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 32px;
+    max-width: 309px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 48px;
+      max-width: 668px;
+    }
+  }
+}

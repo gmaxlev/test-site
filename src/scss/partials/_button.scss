@@ -1,0 +1,42 @@
+/**
+  Кнопки
+ */
+
+.button {
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  &_a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 7px 37.783px;
+    transition: background-color var(--transition-time), color var(--transition-time);
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+  &_b {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 153.4%;
+    color: var(--color-main);
+    border: 2px solid var(--color-main);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 9px 10.6px;
+    min-width: 162px;
+    transition: background-color var(--transition-time), color var(--transition-time);
+    &:hover {
+      background-color: var(--color-main);
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+$icomoon-font-family: "customicon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-next: "\e908";
+$icon-prev: "\e909";
+$icon-coffee: "\e900";
+$icon-faces: "\e901";
+$icon-form: "\e902";
+$icon-photos: "\e903";
+$icon-self: "\e904";
+$icon-smiles: "\e905";
+$icon-uEA01-coaches: "\e906";
+$icon-uEA01-rooms: "\e907";
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('../fonts/#{$icomoon-font-family}.eot?qgi4xi');
+  src:  url('../fonts/#{$icomoon-font-family}.eot?qgi4xi#iefix') format('embedded-opentype'),
+  url('../fonts/#{$icomoon-font-family}.ttf?qgi4xi') format('truetype'),
+  url('../fonts/#{$icomoon-font-family}.woff?qgi4xi') format('woff'),
+  url('../fonts/#{$icomoon-font-family}.svg?qgi4xi##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-next {
+  &:before {
+    content: $icon-next;
+  }
+}
+.icon-prev {
+  &:before {
+    content: $icon-prev;
+  }
+}
+.icon-coffee {
+  &:before {
+    content: $icon-coffee;
+    color: #ff699f;
+  }
+}
+.icon-faces {
+  &:before {
+    content: $icon-faces;
+    color: #ff699f;
+  }
+}
+.icon-form {
+  &:before {
+    content: $icon-form;
+    color: #ff699f;
+  }
+}
+.icon-photos {
+  &:before {
+    content: $icon-photos;
+    color: #ff699f;
+  }
+}
+.icon-self {
+  &:before {
+    content: $icon-self;
+    color: #ff699f;
+  }
+}
+.icon-smiles {
+  &:before {
+    content: $icon-smiles;
+    color: #ff699f;
+  }
+}
+.icon-uEA01-coaches {
+  &:before {
+    content: $icon-uEA01-coaches;
+    color: #ff699f;
+  }
+}
+.icon-uEA01-rooms {
+  &:before {
+    content: $icon-uEA01-rooms;
+    color: #ff699f;
+  }
+}

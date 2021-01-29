@@ -1,0 +1,30 @@
+// Переменные
+@import "./variables";
+
+// Шрифты
+@import "./modules/fonts";
+
+// Медиа запросы
+@import "./modules/breakpoints";
+
+// Сброс стандартных стилей
+@import "./vendor/normalize";
+
+// Глобальные стили
+@import "./global";
+
+// Иконочные шрифты
+@import "modules/iconfonts";
+
+// Блоки
+@import "partials/wrapper";
+@import "partials/container";
+@import "partials/header";
+@import "partials/button";
+@import "partials/mobile-menu";
+@import "partials/intro";
+@import "partials/section";
+@import "partials/services";
+@import "partials/offers";
+@import "partials/coaches";
+@import "partials/footer";

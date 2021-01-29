@@ -1,0 +1,17 @@
+/**
+  Контрольные точки
+*/
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+:root {
+  --font-1: 'Montserrat', sans-serif;
+  --color-main: #FF699F;
+  --transition-time: 0.3s;
+}

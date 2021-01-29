@@ -1,0 +1,35 @@
+/**
+  Footer
+ */
+
+.footer {
+  background: #1F1F1F;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  & > span {
+    &:first-child {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 93.9%;
+      color: #FFFFFF;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+        line-height: 93.9%;
+        color: #FFFFFF;
+      }
+    }
+    &:last-child {
+      font-size: 16px;
+      line-height: 153.4%;
+      color: #FFFFFF;
+      @include media-breakpoint-up(sm) {
+        font-size: 16px;
+        line-height: 153.4%;
+      }
+    }
+  }
+}

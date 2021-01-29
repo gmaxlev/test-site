@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+
+
+<div class="wrapper">
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <input type="checkbox" id="hamburger-menu">
+        <label class="mobile-menu__hamburger" for="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="mobile-menu__content">
+            <h2 class="mobile-menu__header">Menu</h2>
+            <ul class="mobile-menu__items">
+                <li class="mobile-menu__item"><a href="">Services</a></li>
+                <li class="mobile-menu__item"><a href="">Coaches</a></li>
+                <li class="mobile-menu__item"><a href="">Testimonials</a></li>
+                <li class="mobile-menu__item"><a href="">FAQs</a></li>
+                <li class="mobile-menu__item"><a href="">Lessons Review</a></li>
+            </ul>
+            <div class="mobile-menu__act"><button class="button button_b">Let’s start</button></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">Wedding Dance</div>
+                <nav class="header__nav"><a href="">Services</a><a href="">Our Coaches</a><a href="">Testimonials</a><a href="">FAQ</a><a href="">Lesson Review</a></nav>
+                <div class="header__act"><button class="button button_a">Start</button></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Интро -->
+        <section class="intro" >
+            <div class="intro__content">
+                <h1 class="intro__header wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">Wedding<br />Dance<br />Lessons</h1>
+                <p class="intro__subheader wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">New Jersey</p>
+                <p class="intro__text wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">The wedding dance is one of the most important dances in your life. You look perfect and the whole audience is looking at you. Also, it becomes the favorite moment you like to play on videos and photos. Feel the moment</p>
+                <button class="button button_b wow animate__fadeInUp"  data-wow-duration="0.5s" data-wow-delay="0.4s">Let’s start</button>
+            </div>
+            <div class="intro__image">
+                <img src="img/intro.jpg" alt="">
+            </div>
+        </section>
+        <!-- Наши сервисы -->
+        <section class="section">
+            <h2 class="section__header wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">Our Services</h2>
+            <p class="section__comment wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">We want to make your wedding day perfect that is why suggest a lot of options for dance: not only for a bride and groom but for their friends and relatives</p>
+            <div class="services">
+                <div class="swiper-container" id="services-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="services__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.1s">
+                                <div class="services__img" style="background-image: url(img/service-1.jpg)"></div>
+                                <div class="services__content">
+                                    <h3 class="services__name">For Bride and Groom</h3>
+                                    <ul class="services__list">
+                                        <li>First Dance</li>
+                                        <li>Parent & Child Dance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                                <div class="services__img" style="background-image: url(img/service-2.jpg)"></div>
+                                <div class="services__content">
+                                    <h3 class="services__name">For Guests</h3>
+                                    <ul class="services__list">
+                                        <li>Groomsmen Dance</li>
+                                        <li>Parent Dance</li>
+                                        <li>Children’s Dance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                                <div class="services__img" style="background-image: url(img/service-3.jpg)"></div>
+                                <div class="services__content">
+                                    <h3 class="services__name">For Bride and Groom</h3>
+                                    <ul class="services__list">
+                                        <li>Other events</li>
+                                        <li>Anniversary Dance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__pagination" id="services-slider-pagination"></div>
+            </div>
+        </section>
+        <!-- Что мы предлагаем -->
+        <section class="section">
+            <h2 class="section__header wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">What we offer</h2>
+            <p class="section__comment wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">Our goal is not only to teach you how to dance but also give the best unforgettable memories about preparing to your event</p>
+            <div class="offers">
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.1s">
+                    <div class="offers__icon">
+                        <i class="icon-uEA01-coaches"></i>
+                    </div>
+                    <div class="offers__name">Talented Coaches</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <div class="offers__icon">
+                        <i class="icon-uEA01-rooms"></i>
+                    </div>
+                    <div class="offers__name">Cozy rooms for training</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <div class="offers__icon">
+                        <i class="icon-coffee"></i>
+                    </div>
+                    <div class="offers__name">Coffee, tea, and cookies</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                    <div class="offers__icon">
+                        <i class="icon-form"></i>
+                    </div>
+                    <div class="offers__name">Good physical form</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <div class="offers__icon">
+                        <i class="icon-self"></i>
+                    </div>
+                    <div class="offers__name">Self Confidence and success on your event</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                    <div class="offers__icon">
+                        <i class="icon-faces"></i>
+                    </div>
+                    <div class="offers__name">Exciting emotions and a lot of fun</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                    <div class="offers__icon">
+                        <i class="icon-photos"></i>
+                    </div>
+                    <div class="offers__name">Great photos from your event</div>
+                </div>
+                <div class="offers__item wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                    <div class="offers__icon">
+                        <i class="icon-smiles"></i>
+                    </div>
+                    <div class="offers__name">Spend hours together in happiness</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__header wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">Наши тренеры</h2>
+            <p class="section__comment wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">Coaches in our school are not only perfect dancers but also have a big experience in coaching that is why you will feel really amazing after each of your class</p>
+            <div class="coaches wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <div class="swiper-container" id="coaches-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="coaches__item">
+                                <div class="coaches__img">
+                                    <img src="img/one.jpg" alt="">
+                                </div>
+                                <div class="coaches__content">
+                                    <div class="coaches__top">
+                                        <p class="coaches__num">1</p>
+                                        <p class="coaches__name">Ann Walker</p>
+                                        <p class="coaches__profession">Dancer</p>
+                                        <ul class="coaches__about">
+                                            <li>
+                                                <span>Work experience</span>
+                                                <span>8 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Teacher for</span>
+                                                <span>3 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Style</span>
+                                                <span>Viennese Waltz, Salsa</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="coaches__bottom">
+                                        <button class="button button_b">Let’s start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="coaches__item">
+                                <div class="coaches__img">
+                                    <img src="img/two.jpg" alt="">
+                                </div>
+                                <div class="coaches__content">
+                                    <div class="coaches__top">
+                                        <p class="coaches__num">2</p>
+                                        <p class="coaches__name">Tom Wilspon</p>
+                                        <p class="coaches__profession">Dancer</p>
+                                        <ul class="coaches__about">
+                                            <li>
+                                                <span>Work experience</span>
+                                                <span>10 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Teacher for</span>
+                                                <span>5 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Style</span>
+                                                <span>HipHop</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="coaches__bottom">
+                                        <button class="button button_b">Let’s start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="coaches__item">
+                                <div class="coaches__img">
+                                    <img src="img/one.jpg" alt="">
+                                </div>
+                                <div class="coaches__content">
+                                    <div class="coaches__top">
+                                        <p class="coaches__num">3</p>
+                                        <p class="coaches__name">Tom Wilspon</p>
+                                        <p class="coaches__profession">Dancer</p>
+                                        <ul class="coaches__about">
+                                            <li>
+                                                <span>Work experience</span>
+                                                <span>10 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Teacher for</span>
+                                                <span>5 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Style</span>
+                                                <span>HipHop</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="coaches__bottom">
+                                        <button class="button button_b">Let’s start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="coaches__item">
+                                <div class="coaches__img">
+                                    <img src="img/two.jpg" alt="">
+                                </div>
+                                <div class="coaches__content">
+                                    <div class="coaches__top">
+                                        <p class="coaches__num">4</p>
+                                        <p class="coaches__name">Tom Wilspon</p>
+                                        <p class="coaches__profession">Dancer</p>
+                                        <ul class="coaches__about">
+                                            <li>
+                                                <span>Work experience</span>
+                                                <span>10 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Teacher for</span>
+                                                <span>5 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Style</span>
+                                                <span>HipHop</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="coaches__bottom">
+                                        <button class="button button_b">Let’s start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="coaches__item">
+                                <div class="coaches__img">
+                                    <img src="img/two.jpg" alt="">
+                                </div>
+                                <div class="coaches__content">
+                                    <div class="coaches__top">
+                                        <p class="coaches__num">4</p>
+                                        <p class="coaches__name">Tom Wilspon</p>
+                                        <p class="coaches__profession">Dancer</p>
+                                        <ul class="coaches__about">
+                                            <li>
+                                                <span>Work experience</span>
+                                                <span>10 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Teacher for</span>
+                                                <span>5 years</span>
+                                            </li>
+                                            <li>
+                                                <span>Style</span>
+                                                <span>HipHop</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="coaches__bottom">
+                                        <button class="button button_b">Let’s start</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coaches__pagination" id="coaches-slider-pagination"></div>
+            </div>
+            <div class="coaches-navigation">
+                <button class="coaches-navigation__prev" id="coaches-slider-pagination-prev">
+                    <i class="icon-prev"></i>
+                </button>
+                <div class="icon-next__nums">
+                    <span><span id="coaches-slider-pagination-active">1</span> of 4</span>
+                </div>
+                <button class="coaches-navigation__next" id="coaches-slider-pagination-next">
+                    <span class="icon-next"></span>
+                </button>
+            </div>
+        </section>
+
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <span>Wedding Dance</span>
+                <span>Copyright © 2019 </span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</div>
+</body>
+
+</html>

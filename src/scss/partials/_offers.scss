@@ -1,0 +1,40 @@
+/**
+  Предложения
+ */
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: -80px;
+  &__item {
+    width: calc(50% - 20px);
+    margin-bottom: 33px;
+    margin-right: 20px;
+    @include media-breakpoint-up(sm) {
+      width: calc(25% - 15px);
+      margin-bottom: 80px;
+    }
+    &:nth-child(4n+4) {
+      margin-right: 20px;
+      @include media-breakpoint-up(sm) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__icon {
+    font-size: 65px;
+    height: 70px;
+    color: var(--color-main);
+  }
+  &__name {
+
+    line-height: 153.4%;
+    margin: 14px auto 0;
+    max-width: 182px;
+    font-size: 13px;
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+    }
+  }
+}

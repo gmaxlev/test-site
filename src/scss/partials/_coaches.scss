@@ -1,0 +1,171 @@
+/**
+  Тренеры
+ */
+
+.coaches {
+  padding: 20px;
+  margin: -20px;
+  position: relative;
+  .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .swiper-slide {
+    align-items: stretch;
+    height: auto;
+  }
+  &__item {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+    border-radius: 2px;
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+       flex-direction: row;
+    }
+  }
+  &__img {
+
+    @include media-breakpoint-up(lg) {
+      width: 48%;
+      margin-right: 33px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+  &__num {
+    margin: 0;
+    font-weight: bold;
+    line-height: 153.4%;
+    margin-bottom: 8px;
+    font-size: 12px;
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+    }
+  }
+  &__name {
+    margin: 0;
+    font-weight: bold;
+    line-height: 93.9%;
+    margin-bottom: 8px;
+    font-size: 18px;
+    @include media-breakpoint-up(sm) {
+      font-size: 24px;
+    }
+  }
+  &__profession {
+    color: #000000;
+    margin: 0;
+    font-size: 13px;
+    line-height: 153.4%;
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+    }
+  }
+  .coaches__about {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    & > li {
+      margin-bottom: 8px;
+      line-height: 153.4%;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-up(xs) {
+         display: block;
+        margin-bottom: 16px;
+      }
+      & > span {
+        &:first-child {
+          opacity: 0.5;
+          font-size: 13px;
+          @include media-breakpoint-up(xs) {
+            font-size: 16px;
+          }
+        }
+        &:last-child {
+          font-size: 13px;
+          @include media-breakpoint-up(xs) {
+            font-size: 16px;
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 43px 20px 78px 0;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(sm) {
+       display: none;
+    }
+    & > span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 1!important;;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      margin-right: 4px;
+      background-color: transparent;
+      outline: none;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.swiper-pagination-bullet-active {
+        background-color: var(--color-main);
+        border: 0;
+      }
+    }
+  }
+}
+.coaches-navigation {
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  display: none;
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+}
+.icon-next__nums {
+  font-size: 16px;
+  line-height: 153.4%;
+  color: #000000;
+  margin: 0 17px;
+  transform: translateY(-5px);
+}
+.coaches-navigation__prev, .coaches-navigation__next {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+
+}

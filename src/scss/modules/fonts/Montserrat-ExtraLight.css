@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Montserrat ExtraLight";
+    src: url("../fonts/Montserrat-ExtraLight.eot"); /* IE9 */
+    src: url("../fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Montserrat-ExtraLight.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/Montserrat-ExtraLight.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/Montserrat-ExtraLight.svg#Montserrat ExtraLight") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

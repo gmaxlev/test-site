@@ -1,0 +1,116 @@
+/**
+  Сервисы
+ */
+
+.services {
+  padding-right: 50px;
+  position: relative;
+  .swiper-container {
+    overflow: visible;
+  }
+  @include media-breakpoint-up(md) {
+     padding: 20px;
+     margin: -20px;
+     overflow: hidden;
+    .swiper-container {
+      width: 100%;
+    }
+    .swiper-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .swiper-slide {
+      width: 33.333333%;
+      margin-right: 16px;
+      flex-shrink: initial;
+      align-items: stretch;
+      height: auto;
+    }
+  }
+  &__item {
+    margin-right: 12px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+    border-radius: 2px;
+    overflow: hidden;
+    height: 100%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+  &__name {
+    font-weight: bold;
+
+    line-height: 93.9%;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    @include media-breakpoint-up(sm) {
+      font-size: 24px;margin-bottom: 24px;
+    }
+  }
+  &__list {
+
+    color: #000000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 153.4%;
+    @include media-breakpoint-up(sm) {
+      font-size: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__content {
+    padding: 24px 16px;
+    @include media-breakpoint-up(sm) {
+      padding: 40px 24px;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    & > span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 1!important;;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      margin-right: 4px;
+      background-color: transparent;
+      outline: none;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.swiper-pagination-bullet-active {
+        background-color: var(--color-main);
+        border: 0;
+      }
+    }
+  }
+}
